@@ -1,0 +1,73 @@
+.App {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  height: 100vh;
+}
+
+.HomePage ,
+.RegisterPage,
+.LoginPage{
+  height: 100%;
+  margin: 0 auto;
+  align-items: center;
+  display: flex;
+}
+
+.input-form {
+  width: 30%;
+}
+
+#register-button,
+#submit-register-button {
+  background-color: #0277bd;
+}
+
+#register-button:hover,
+#submit-register-button:hover {
+  background-color: #4fc3f7;
+}
+
+#login-button,
+#submit-login-button {
+  background-color: #00796b;
+}
+
+#login-button:hover,
+#submit-login-button:hover {
+  background-color: #4db6ac;
+}
+
+#register-button,
+#login-button {
+  width: 260px;
+  height: 70px;
+  margin: 4px;
+  padding: 0;
+  line-height: 70px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* label focus color */
+.input-field.register input[type="text"]:focus + label,
+.input-field.register input[type="password"]:focus + label,
+.input-field.register input[type="email"]:focus + label {
+  color: #03a9f4 !important;
+}
+
+/* label underline focus color */
+.input-field.register input[type="text"]:focus,
+.input-field.register input[type="password"]:focus,
+.input-field.register input[type="email"]:focus {
+  border-bottom: 1px solid #03a9f4 !important;
+  box-shadow: 0 1px 0 0 #03a9f4 !important;
+}
+
+ /* valid color */
+ .input-field.register input[type="text"].valid,
+ .input-field.register input[type="password"].valid,
+ .input-field.register input[type="email"].valid {
+  border-bottom: 1px solid #03a9f4 !important;
+  box-shadow: 0 1px 0 0 #03a9f4 !important;
+}
